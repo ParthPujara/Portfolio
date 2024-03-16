@@ -26,7 +26,7 @@ const MainSection = () => {
           </div>
           <div className="flex md:text-xl">
             <a
-              href="https://github.com/ParthPujara/Portfolio/blob/main/src/CV/Parth%20Pujara%20CV.pdf"
+              href="https://parthpujara.github.io/Portfolio/Parth%20Pujara%20CV.pdf"
               target="_blank"
               className="flex-1 text-center mr-4 bg-white p-2 md:p-3 rounded-md text-yellow font-bold cursor-pointer hover:shadow-2xl hover:shadow-[#ffffff] "
               data-aos="fade-up"
