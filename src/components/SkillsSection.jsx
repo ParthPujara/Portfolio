@@ -15,30 +15,37 @@ import i1 from "../assets/Skills.png";
 const SkillsSection = () => {
   const social = [
     {
+      icon: "HTML 5",
       name: faHtml5,
       color: "#F06529",
     },
     {
+      icon: "CSS 3",
       name: faCss3Alt,
       color: "#264de4",
     },
+    // {
+    //   icon: "JavaScript",
+    //   name: faSquareJs,
+    //   color: "#F0DB4F",
+    // },
     {
-      name: faSquareJs,
-      color: "#F0DB4F",
-    },
-    {
+      icon: "React",
       name: faReact,
       color: "#61DBFB",
     },
     {
+      icon: "Node JS",
       name: faNodeJs,
       color: "#3C873A",
     },
     {
+      icon: "Bootstrap",
       name: faBootstrap,
       color: "#FFFFFF",
     },
     {
+      icon: "Github",
       name: faGithub,
       color: "#FFFFFF",
     },
@@ -54,17 +61,26 @@ const SkillsSection = () => {
           <img src={i1} alt="" className="mh:h-[250px] h-[230px]" />
         </div>
       </div>
-      <div className="text-3xl md:text-5xl flex justify-center items-center md:mt-14 mt-6 md:gap-10 gap-5 flex-wrap px-20">
-        {social.map((item, index) => (
-          <span data-aos="flip-left" data-aos-delay={`${300 + index * 100}`}>
-            <FontAwesomeIcon
-              icon={item.name}
-              color={item.color}
-              className="bg-blue rounded-full px-4 py-3"
-              key={item.name}
-            />
-          </span>
-        ))}
+      <div className="md:max-w-[70vw] w-screen mx-auto">
+        <div className="flex justify-center items-center md:mt-14 mt-6 md:gap-10 gap-5 flex-wrap px-20">
+          {social.map((item, index) => (
+            <span
+              data-aos="flip-left"
+              data-aos-delay={`${300 + index * 100}`}
+              className="group"
+            >
+              <div className="text-lg text-center opacity-0 group-hover:opacity-100 transition-all duration-100 text-white">
+                {item.icon}
+              </div>
+              <FontAwesomeIcon
+                icon={item.name}
+                color={item.color}
+                className="px-4 py-3 transition-all duration-300 text-4xl md:text-5xl group-hover:text-4xl group-hover:md:text-6xl"
+                key={item.name}
+              />
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );

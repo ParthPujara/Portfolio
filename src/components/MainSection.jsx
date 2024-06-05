@@ -50,37 +50,37 @@ const MainSection = () => {
             {/* <a href="mailto:parthpujara08@gmail.com?subject='Join our company'&body='There is a job opputunity for you'"> */}
             <a href="https://gmail.com" target="_blank">
               <div
-                className="bg-blue p-3 md:p-4 rounded-full"
+                className="bg-blue p-3 md:p-4 rounded-full hover:shadow-sm hover:shadow-[#ffffff] icon-wrapper"
                 data-aos="zoom-in"
                 data-aos-delay="700"
               >
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="text-yellow md:text-3xl text-2xl"
+                  className="text-yellow md:text-3xl text-2xl icon"
                 />
               </div>
             </a>
             <a href="https://github.com/ParthPujara" target="_blank">
               <div
-                className="bg-blue p-3 md:p-4 rounded-full"
+                className="bg-blue p-3 md:p-4 rounded-full hover:shadow-sm hover:shadow-[#ffffff] icon-wrapper"
                 data-aos="zoom-in"
                 data-aos-delay="800"
               >
                 <FontAwesomeIcon
                   icon={faGithub}
-                  className="text-yellow md:text-3xl text-2xl"
+                  className="text-yellow md:text-3xl text-2xl icon"
                 />
               </div>
             </a>
             <a href="https://www.linkedin.com/in/parth-pujara/" target="_blank">
               <div
-                className="bg-blue p-3 md:p-4 rounded-full"
+                className="bg-blue p-3 md:p-4 rounded-full hover:shadow-sm hover:shadow-[#ffffff] icon-wrapper"
                 data-aos="zoom-in"
                 data-aos-delay="900"
               >
                 <FontAwesomeIcon
                   icon={faLinkedinIn}
-                  className="text-yellow md:text-3xl text-2xl"
+                  className="text-yellow md:text-3xl text-2xl icon" 
                 />
               </div>
             </a>
